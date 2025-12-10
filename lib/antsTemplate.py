@@ -62,8 +62,8 @@ def antsReg(fixedImg, movingImg, outPrefix, logDir, verbose):
                            '-d', '3',
                            '-f', fixedImg,
                            '-m', movingImg,
-                           '-o', outPrefix,
-                           '-e', '123456'])
+                           '-o', outPrefix]) #,
+                           #'-e', '123456'])
    
     # check_call(cmd, shell= True, stdout= f, stderr= sys.stdout)
     

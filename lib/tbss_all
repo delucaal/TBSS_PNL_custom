@@ -14,6 +14,7 @@
 # ===============================================================================
 
 import argparse
+import subprocess
 from tbssUtil import FILEDIR, LIBDIR, isfile, isdir, pjoin, makeDirectory, check_call, \
     dirname, abspath, environ, copyfile, warn, basename, getcwd, chdir, listdir, RAISE
 from conversion import loadExecutable, read_imgs_masks, read_cases
@@ -350,27 +351,27 @@ as you would provide for FA TBSS.""")
     if args.template:
         fileBaseName= basename(args.template)
         if fileBaseName not in files:
-            check_call(f'ln -s {args.template}', shell= True)
+            subprocess.call(f'ln -s {args.template}', shell= True)
 
     if args.templateMask:
         fileBaseName= basename(args.templateMask)
         if fileBaseName not in files:
-            check_call(f'ln -s {args.templateMask}', shell=True)
+            subprocess.call(f'ln -s {args.templateMask}', shell=True)
 
     if args.skeleton:
         fileBaseName= basename(args.skeleton)
         if fileBaseName not in files:
-            check_call(f'ln -s {args.skeleton}', shell= True)
+            subprocess.call(f'ln -s {args.skeleton}', shell= True)
 
     if args.skeletonMask:
         fileBaseName= basename(args.skeletonMask)
         if fileBaseName not in files:
-            check_call(f'ln -s {args.skeletonMask}', shell= True)
+            subprocess.call(f'ln -s {args.skeletonMask}', shell= True)
 
     if args.skeletonMaskDst:
         fileBaseName= basename(args.skeletonMaskDst)
         if fileBaseName not in files:
-            check_call(f'ln -s {args.skeletonMaskDst}', shell= True)
+            subprocess.call(f'ln -s {args.skeletonMaskDst}', shell= True)
 
 
 

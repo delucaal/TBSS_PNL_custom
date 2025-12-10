@@ -1,0 +1,4 @@
+dti_tra_dir16_AP_9_134431
+dti_tra_dir16_PA_6_134431
+dti_tra_dir16_PA_rot_12_132222
+dti_tra_dir16_PA_rot_12_134431

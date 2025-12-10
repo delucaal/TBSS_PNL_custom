@@ -1001,7 +1001,7 @@ if [[ "$RIGID" -eq 1 ]];
     for (( i = 0; i < ${#IMAGESETARRAY[@]}; i+=$NUMBEROFMODALITIES ))
       do
 
-        basecall="${ANTS} -d ${DIM} --float $USEFLOAT --verbose 1 -u 1 -w [0.01,0.99] -z 1 -r [${TEMPLATES[0]},${IMAGESETARRAY[$i]},1] --random-seed 123456"
+        basecall="${ANTS} -d ${DIM} --float $USEFLOAT --verbose 1 -u 1 -w [0.01,0.99] -z 1 -r [${TEMPLATES[0]},${IMAGESETARRAY[$i]},1]" # --random-seed 123456"
 
         IMAGEMETRICSET=""
         for (( j = 0; j < $NUMBEROFMODALITIES; j++ ))

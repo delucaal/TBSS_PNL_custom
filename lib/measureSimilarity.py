@@ -7,19 +7,21 @@ import numpy as np
 
 def computeMI(target, img, miFile):
 
-    (MeasureImageSimilarity['-d', '3', '-m', 'MI[{},{},1,256]'.format(target, img)] > miFile) & FG
+    #(MeasureImageSimilarity['-d', '3', '-m', 'MI[{},{},1,256]'.format(target, img)] > miFile) & FG
+    (MeasureImageSimilarity['3', '2', target, img] > miFile) & FG
 
 
 def measureSimilarity(imgs, cases, target, logDir, ncpu):
 
-    pool = Pool(ncpu)
+    #pool = Pool(ncpu)
     for img,c in zip(imgs,cases):
         print(f'MI between {c} and target')
         miFile = pjoin(logDir, f'{c}_MI.txt')
-        pool.apply_async(func=computeMI, args=(target, img, miFile), error_callback= RAISE)
+        #pool.apply_async(func=computeMI, args=(target, img, miFile), error_callback= RAISE)
+        computeMI(target, img, miFile)
 
-    pool.close()
-    pool.join()
+    #pool.close()
+    #pool.join()
 
     summaryCsv = pjoin(logDir, 'similarity.csv')
     

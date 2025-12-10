@@ -1,0 +1,4 @@
+/home/matlab/tbss/lib/tests/data/dcm_qa_uih/Ref/dti_tra_dir16_AP_9_134431.nii,/home/matlab/tbss/lib/tests/data/dcm_qa_uih/Ref/dti_tra_dir16_AP_9_134431_mask.nii.gz
+/home/matlab/tbss/lib/tests/data/dcm_qa_uih/Ref/dti_tra_dir16_PA_6_134431.nii,/home/matlab/tbss/lib/tests/data/dcm_qa_uih/Ref/dti_tra_dir16_PA_6_134431_mask.nii.gz
+/home/matlab/tbss/lib/tests/data/dcm_qa_uih/Ref/dti_tra_dir16_PA_rot_12_132222.nii,/home/matlab/tbss/lib/tests/data/dcm_qa_uih/Ref/dti_tra_dir16_PA_rot_12_132222_mask.nii.gz
+/home/matlab/tbss/lib/tests/data/dcm_qa_uih/Ref/dti_tra_dir16_PA_rot_12_134431.nii,/home/matlab/tbss/lib/tests/data/dcm_qa_uih/Ref/dti_tra_dir16_PA_rot_12_134431_mask.nii.gz

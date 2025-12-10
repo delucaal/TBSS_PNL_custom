@@ -65,5 +65,6 @@ def makeDirectory(dir, force= False):
         mkdir(dir)
 
 def RAISE(ERR):
-    raise ERR
+    #raise ERR
+    print(ERR)
 
