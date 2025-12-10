@@ -7,8 +7,8 @@ import numpy as np
 
 def computeMI(target, img, miFile):
 
-    #(MeasureImageSimilarity['-d', '3', '-m', 'MI[{},{},1,256]'.format(target, img)] > miFile) & FG
-    (MeasureImageSimilarity['3', '2', target, img] > miFile) & FG
+    (MeasureImageSimilarity['-d', '3', '-m', 'MI[{},{},1,256]'.format(target, img)] > miFile) & FG
+    #(MeasureImageSimilarity['3', '2', target, img] > miFile) & FG # For older versions of ANTS
 
 
 def measureSimilarity(imgs, cases, target, logDir, ncpu):
